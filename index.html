@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>futsal list and Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="userBookingPage.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="title">
+                <h1>BOOK MY <span>GAME</span></h1>
+            </div>
+            <div class="username">
+                <p onclick="welcome()">Welcome, Abishek Shahi <i class="fa-solid fa-caret-down"></i></p>
+                <div class="underline"></div>
+                <div class="menubar" onclick="menubar()"><i class="fa-solid fa-bars"></i></div>
+            </div>
+            <div class="list">
+                <p>Profile</p>
+                <p>Statements</p>
+                <p>Load Wallet</p>
+                <p>Logout</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Middle part -->
+    <div class="container">
+        <div class="city-name">
+            <div class="line"></div>
+            <h2>CHITWAN</h2>
+        </div>
+        <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+        <div class="fustal-box">
+            <div class="fustalvenue" onclick="fustImag()">
+                <img src="img/kshetrapur fustal.jpeg" alt="">
+                <h4>Kshetrapur Fustal Arena</h4>
+            </div>
+            <div class="fustalvenue" onclick="fustImag1()">
+                <img src="img/gautam chowk fustal.jpg" alt="">
+                <h4>Chitwan Fustal and Game Zone</h4>
+            </div>
+            <div class="fustalvenue" onclick="fustImag2()">
+                <img src="img/parsa fustal.jpg" alt="">
+                <h4>Parsa Fustal</h4>
+            </div>
+            <div class="fustalvenue" onclick="fustImag3()">
+                <img src="img/shardapur fustal.jpg" alt="">
+                <h4>The Sharadpur futsal</h4>
+            </div>
+            <div class="fustalvenue" onclick="fustImag4()">
+                <img src="img/cassi sports.jpg" alt="">
+                <h4>Cassi Sports and Recreational Center</h4>
+            </div>
+        </div>
+        <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+
+    </div>
+    <div class="f-description">
+        <div class="fdes1">
+            <div class="fustal-des">
+                <div class="img">
+                    <img src="img/kshetrapur fustal.jpeg" alt="">
+                </div>
+                <div class="name-rating">
+                    <h4>Kshetrapur Fustal Arena</h4>
+                    <p class="fustal-location">MCWJ+VPR Road, Bharatpur 44200</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(4.5/5)</span>
+                    </div>
+                    <div class="book-close-btn">
+                        <button class="book" onclick="Book1()">BOOK</button>
+                        <button class="cancel" onclick="cancel()">CANCEL</button>
+                    </div>
+                    <div class="booking1">
+                        <div class="booking-box">
+                            <div class="date-head">
+                                <h4>Booking is available only for 3 days.</h4>
+                            </div>
+                            <div class="date">
+                                <p class="today">Today</p>
+                                <p class="tomorrow">Tomorrow</p>
+                                <p class="after3days"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-time1">
+                        <div class="time1">
+                            <a href="payementPage.html">7am-8am</a>
+                            <a href="#">8am-9am</a>
+                            <a href="payementPage.html">9am-10am</a>
+                            <a href="payementPage/payementPage.html">10am-11am</a>
+                            <a href="#">11am-12pm</a>
+                            <a href="#">3pm-4pm</a>
+                            <a href="payementPage/payementPage.html">4pm-5pm</a>
+                            <a href="#">5pm-6pm</a>
+                        </div>
+    
+                        <div class="booked-or-not1">
+                            <div class="booked">
+                                <div class="circle"></div>
+                                <p>Booked</p>
+                            </div>
+                            <div class="not-booked">
+                                <div class="circle"></div>
+                                <p>Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+
+            </div>
+        </div>
+
+        <div class="fdes2">
+            <div class="fustal-des">
+                <div class="img">
+                    <img src="img/gautam chowk fustal.jpg" alt="">
+                </div>
+                <div class="name-rating">
+                    <h4>Chitwan Fustal and Sport Arena</h4>
+                    <p class="fustal-location">MC9H+R7R, Gautam Chowk, Bharatpur 7</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(4/5)</span>
+                    </div>
+                    <div class="book-close-btn">
+                        <button class="book" onclick="Book2()">BOOK</button>
+                        <button class="cancel" onclick="cancel()">CANCEL</button>
+                    </div>
+                    <div class="booking2">
+                        <div class="booking-box">
+                            <div class="date-head">
+                                <h4>Booking is available only for 3 days.</h4>
+                            </div>
+                            <div class="date">
+                                <p class="today">Today</p>
+                                <p class="tomorrow">Tomorrow</p>
+                                <p class="after3days"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking-time2">
+                        <div class="time2">
+                            <a href="#">7am-8am</a>
+                            <a href="payementPage.html">8am-9am</a>
+                            <a href="#">9am-10am</a>
+                            <a href="payementPage.html">10am-11am</a>
+                            <a href="payementPage.html">11am-12pm</a>
+                            <a href="#">3pm-4pm</a>
+                            <a href="#">4pm-5pm</a>
+                            <a href="payementPage.html">5pm-6pm</a>
+                        </div>
+
+                        <div class="booked-or-not2">
+                            <div class="booked">
+                                <div class="circle"></div>
+                                <p>Booked</p>
+                            </div>
+                            <div class="not-booked">
+                                <div class="circle"></div>
+                                <p>Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fdes3">
+            <div class="fustal-des">
+                <div class="img">
+                    <img src="img/parsa fustal.jpg" alt="">
+                </div>
+                <div class="name-rating">
+                    <h4>Parsa Fustal</h4>
+                    <p class="fustal-location">MC9H+R7R, Parsa Bazar, Chitwan</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(4/5)</span>
+                    </div>
+                    <div class="book-close-btn">
+                        <button class="book" onclick="Book3()">BOOK</button>
+                        <button class="cancel" onclick="cancel()">CANCEL</button>
+                    </div>
+                    <div class="booking3">
+                        <div class="booking-box">
+                            <div class="date-head">
+                                <h4>Booking is available only for 3 days.</h4>
+                            </div>
+                            <div class="date">
+                                <p class="today">Today</p>
+                                <p class="tomorrow">Tomorrow</p>
+                                <p class="after3days"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-time3">
+                        <div class="time3">
+                            <a href="payementPage.html">7am-8am</a>
+                            <a href="#">8am-9am</a>
+                            <a href="#">9am-10am</a>
+                            <a href="payementPage.html">10am-11am</a>
+                            <a href="payementPage.html">11am-12pm</a>
+                            <a href="payementPage.html">3pm-4pm</a>
+                            <a href="payementPage.html">4pm-5pm</a>
+                            <a href="#">5pm-6pm</a>
+                        </div>
+
+                        <div class="booked-or-not3">
+                            <div class="booked">
+                                <div class="circle"></div>
+                                <p>Booked</p>
+                            </div>
+                            <div class="not-booked">
+                                <div class="circle"></div>
+                                <p>Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fdes4">
+            <div class="fustal-des">
+                <div class="img">
+                    <img src="img/shardapur fustal.jpg" alt="">
+                </div>
+                <div class="name-rating">
+                    <h4>The Sharadpur futsal</h4>
+                    <p class="fustal-location">MC7J+FJ2, Bharatpur 44200</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(4.5/5)</span>
+                    </div>
+                    <div class="book-close-btn">
+                        <button class="book" onclick="Book4()">BOOK</button>
+                        <button class="cancel" onclick="cancel()">CANCEL</button>
+                    </div>
+                    <div class="booking4">
+                        <div class="booking-box">
+                            <div class="date-head">
+                                <h4>Booking is available only for 3 days.</h4>
+                            </div>
+                            <div class="date">
+                                <p class="today">Today</p>
+                                <p class="tomorrow">Tomorrow</p>
+                                <p class="after3days"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-time4">
+                        <div class="time4">
+                            <a href="payementPage.html">7am-8am</a>
+                            <a href="#">8am-9am</a>
+                            <a href="payementPage.html">9am-10am</a>
+                            <a href="#">10am-11am</a>
+                            <a href="payementPage.html">11am-12pm</a>
+                            <a href="#">3pm-4pm</a>
+                            <a href="payementPage.html">4pm-5pm</a>
+                            <a href="#">5pm-6pm</a>
+                        </div>
+
+                        <div class="booked-or-not4">
+                            <div class="booked">
+                                <div class="circle"></div>
+                                <p>Booked</p>
+                            </div>
+                            <div class="not-booked">
+                                <div class="circle"></div>
+                                <p>Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fdes5">
+            <div class="fustal-des">
+                <div class="img">
+                    <img src="img/cassi sports.jpg" alt="">
+                </div>
+                <div class="name-rating">
+                    <h4>Cassi Sports and Recreational Center</h4>
+                    <p class="fustal-location">MC9H+R7R,Barhaghare-Bharatpur, Chitwan</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(4.5/5)</span>
+                    </div>
+                    <div class="book-close-btn">
+                        <button class="book" onclick="Book5()">BOOK</button>
+                        <button class="cancel" onclick="cancel()">CANCEL</button>
+                    </div>
+                    <div class="booking5">
+                        <div class="booking-box">
+                            <div class="date-head">
+                                <h4>Booking is available only for 3 days.</h4>
+                            </div>
+                            <div class="date">
+                                <p class="today">Today</p>
+                                <p class="tomorrow">Tomorrow</p>
+                                <p class="after3days"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-time5">
+                        <div class="time4">
+                            <a href="payementPage.html">7am-8am</a>
+                            <a href="#">8am-9am</a>
+                            <a href="payementPage.html">9am-10am</a>
+                            <a href="#">10am-11am</a>
+                            <a href="payementPage.html">11am-12pm</a>
+                            <a href="#">3pm-4pm</a>
+                            <a href="payementPage.html">4pm-5pm</a>
+                            <a href="#">5pm-6pm</a>
+                        </div>
+
+                        <div class="booked-or-not4">
+                            <div class="booked">
+                                <div class="circle"></div>
+                                <p>Booked</p>
+                            </div>
+                            <div class="not-booked">
+                                <div class="circle"></div>
+                                <p>Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Ending part -->
+    <footer>
+        <div class="footpart">
+            <h2>Copyright © 2023. All rights Reserved.</h2>
+            <div class="right-side">
+                <div class="footlist">
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Our Team</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="footlist2">
+                    <p>Privacy Policy</p>
+                    <p>Terms and Condition</p>
+                    <p>Return, Refund & Cancellation policy</p>
+                    <p>Disclaimer</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="userBookingPage.js"></script>
+</body>
+
+</html>
