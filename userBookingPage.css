@@ -481,11 +481,12 @@ font-family: var(--font);
     display: block;
   }
   .fustal-des img{
-    width: 70%;
+    width: 75%;
     margin-top: 30px;
+     margin-left: 40px;
   }
   .name-rating{
-    margin-left: 30px;
+    margin-left: 40px;
     margin-top: -15px;
   }
   .list {
@@ -543,7 +544,9 @@ font-family: var(--font);
   .footlist,.footlist2{
     right: 1rem;
   }
-
+  .fustal-des img,.name-rating{
+      margin-left: 30px;
+  }
 }
 
 @media screen and (max-width:365px) {
