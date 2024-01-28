@@ -24,7 +24,7 @@ Cancel.addEventListener('click',()=>{
 });
 
 function closePopup(){
-    window.location = 'userBookingPage.html';
+    window.location = 'index.html';
 }
 
 
