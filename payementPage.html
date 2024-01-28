@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payement Page</title>
+  <link rel="stylesheet" href="payementPage.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="firstnav">
+      <img src="img/esewa_epay_logo.png" alt="#">
+    </div>
+    <div class="secondnav">
+      <p>Please login to make your payement</p>
+    </div>
+  </header>
+  <!-- main part -->
+  <div class="container">
+    <div class="transaction-box">
+      <h3>Transaction Details</h3>
+      <h5>Futsal Booking <span>NPR</span></h5>
+      <p>Charge Per Hour: <span>Rs 1200.00</span></p>
+      <p>Tax Amount: <span>0.00</span></p>
+      <p>Service Charge: <span>0.00</span></p>
+      <p class="total">Total Amount: <span>Rs 1200.00</span></p>
+    </div>
+
+    <div class="login-box">
+      <h3>Login</h3>
+      <div class="id">
+        <p>eSewa ID:</p>
+        <input class="userid" type="tel" placeholder="email/ mobile number" />
+      </div>
+      <div class="password">
+        <p>Password:</p>
+        <input class="userpassword" type="password" placeholder="password" />
+      </div>
+      <button class="login-btn" type="submit">LOGIN</button> <br>
+      <button class="cancel-btn">CANCEL</button>
+    </div>
+    <!-- footer -->
+ <div class="footer">
+      <p>© eSewa Nepal, 2009-2023. All Rights Reserved.</p>
+      <img src="img/esewa-logo.png" alt="#">
+ </div>
+  </div>
+ 
+ 
+ <div class="container-popup">
+  <div class="popup" id="Popup">
+    <img src="img/404-tick.png" alt="" />
+    <h2>Thank You!</h2>
+    <p>Your transcation has been successfully completed. Thanks!</p>
+    <button type="button" onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+  <script src="payementPage.js"></script>
+</body>
+
+</html>
