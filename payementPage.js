@@ -20,7 +20,7 @@ Login.addEventListener('click', () => {
 
 Cancel.addEventListener('click',()=>{
     popup.classList.remove('open-popup');
-    window.location = 'userBookingPage.html';
+    window.location = 'index.html';
 });
 
 function closePopup(){
